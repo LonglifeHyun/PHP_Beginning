@@ -12,7 +12,7 @@
     </ol> -->
     <ol>
       <?php
-      $lists = scandir('data');
+      $lists = scandir('./data');
       foreach ($lists as $list) {
         if(in_array($list, ['.','..']))
           continue;
@@ -20,7 +20,7 @@
           <li><a href="index.php?id=<?=$list?>"><?=$list?></a></li>
           <?php
       }
-       ?>  
+       ?>
     </ol>
 
     <h2>
